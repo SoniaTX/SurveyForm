@@ -1,0 +1,262 @@
+body {
+  background: #384047;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: teal;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+form {
+  background: #fff;
+  padding:  4em 4em 2em;
+  max-width: 600px;
+  margin: 40px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+h3 {
+  display: block;
+  font-size: 1.4em;
+  margin: 0 0 .5em;
+  color: black;
+  font-weight: 550;
+}
+
+
+p {
+  
+}
+
+label {
+  display: block;
+  font-size: 1.4em;
+  margin: 0 0 .5em;
+  color: black;
+  font-weight: 550;
+
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"], input[type='number'] {
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  font-size: 1.4em;
+  padding: .8em .5em;
+  border-radius: 5px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: #fff
+}
+
+input[type="submit"] {
+  background: teal;
+  box-shadow: 0 3px 0 0 #1D3C6A;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+  line-height: 1.6em;
+  margin: 2em 0 0;
+  outline: none;
+  padding: .8em 0;
+  text-shadow: 0 1px #68B25B;
+  
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.4em;
+    color: black;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #aaa;
+}
+
+.container input:checked ~ .checkmark {
+    background-color:  teal;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark2 {
+    background-color: #aaa;
+}
+
+.container input:checked ~ .checkmark2 {
+    background-color: teal;
+}
+
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark2:after {
+    display: block;
+}
+
+.container .checkmark2:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-select {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+}
+
+.custom-select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color:  teal;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: teal;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#description {
+  text-align: center;
+  display: block;
+  font-size: 1.4em;
+  margin: 0 0 .5em;
+  color: black;
+  font-weight: 500;
+
+}
+
+.teal {
+  color: teal;
+}

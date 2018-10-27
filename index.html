@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Build a SurveyForm</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+<head>
+	<title>Build a Survey Form</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+  
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+	<form id="survey-form" action="#" method="post">
+    <p id="description">Let us know how we can improve freeCodeCamp </p>
+		<p>
+			<label class="teal" id="name-label" for="name">Name</label>
+			<input name="name" id="name" type="text" placeholder="Enter your name" required>
+		</p>
+		<p>
+			<label class="teal" id="email-label" for="email">Email</label>
+			<input name="email" id="email" type="email" placeholder="Enter your email address" required>
+		</p>
+    
+    	<p>
+			<label  class="teal" id="number-label" for="name">Age</label>
+			<input name="age" id="number" min="1"  max="100" type="number"  placeholder="Enter your age">
+		</p>
+    
+<br>  
+    
+ <h3 class="teal" >Which option best describes your current role?</h3>
+<div id="dropdown" class="custom-select" style="width:200px;"> 
+  <select> 
+    <option value="0">Select an option:</option>
+    <option value="1">Student</option>
+    <option value="2">Full Time Job</option>
+    <option value="3">Full Time Learner</option>
+    <option value="4">Prefer not to say</option>
+    <option value="5">Other</option>   
+  </select>
+</div>       
+    <br>
+<h3 class="teal" >How likely is that you would recommend freeCodeCamp to a friend?</h3>
+          
+<label class="container">Definitely
+  <input type="radio" value="1"  checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Maybe
+  <input type="radio" value="2" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Not Sure
+  <input type="radio" value="3"  name="radio">
+  <span class="checkmark"></span>
+</label>
+        <br>        
+     <h3 class="teal" >What do you like most in FCC:</h3>
+<div id="dropdown" class="custom-select" style="width:200px;"> 
+  <select> 
+    <option value="0">Select an option:</option>
+    <option value="1">Challenges</option>
+    <option value="2">Projects</option>
+    <option value="3">Community</option>
+    <option value="4">Open Source</option>
+ 
+  </select>
+</div>     
+    <br>    
+ <h3 class="teal" >Things that should be improved in the future
+(Check all that apply): </h3>
+        
+ <label class="container">Front-end Projects
+  <input type="checkbox" value="1"  checked="checked">
+  <span class="checkmark2"></span>
+</label>
+<label class="container">Back-end Projects
+  <input type="checkbox" value="2" >
+  <span class="checkmark2"></span>
+</label>
+<label class="container">Data Visualization
+  <input type="checkbox" value="3" >
+  <span class="checkmark2"></span>
+</label>
+<label class="container">Challenges
+  <input type="checkbox" value="4" >
+  <span class="checkmark2"></span>
+</label>    
+<label class="container">Open Source Community
+  <input type="checkbox" value="5" >
+  <span class="checkmark2"></span>
+</label>     
+<label class="container">Gitter help rooms
+  <input type="checkbox" value="6" >
+  <span class="checkmark2"></span>
+</label> 
+<label class="container">Videos
+  <input type="checkbox" value="7" >
+  <span class="checkmark2"></span>
+</label>     
+<label class="container">City Meetups
+  <input type="checkbox" value="8" >
+  <span class="checkmark2"></span>
+</label> 
+<label class="container">Wiki
+  <input type="checkbox" value="9" >
+  <span class="checkmark2"></span>
+</label>     
+<label class="container">Forum
+  <input type="checkbox" value="10" >
+  <span class="checkmark2"></span>
+</label>     
+ <label class="container">Additional Courses
+  <input type="checkbox" value="11" >
+  <span class="checkmark2"></span>
+</label> 
+      <br>
+        <h3 class="teal" > Any Comments or Suggestions?  </h3>   
+     <textarea placeholder="Enter your comment..." cols="30" rows="5"></textarea>
+
+		<p><input type="submit" value="SUBMIT" id="submit">
+		</p>
+	</form>
+
+</body>
+</html>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
